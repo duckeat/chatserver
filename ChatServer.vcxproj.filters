@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{fb289782-0374-4e8e-af6e-72b9b74127c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated">
+      <UniqueIdentifier>{0a19da2d-99e5-4908-8770-8b8411429d26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PCH">
+      <UniqueIdentifier>{ad0730f9-06f4-442a-ad9c-0a411ca00f20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server">
+      <UniqueIdentifier>{698244e2-aa13-4038-a9f0-7ce5149986a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\Config">
+      <UniqueIdentifier>{1355321e-71d0-491a-81b6-744a53194a91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\Processors">
+      <UniqueIdentifier>{f8672aa6-478b-4d61-8d42-a5a2d1a8fb69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\Sessions">
+      <UniqueIdentifier>{85cdf324-e906-4896-85bf-0d6304295102}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{0449632e-9f7e-4304-a158-61c7b6ba3214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Session">
+      <UniqueIdentifier>{bad949d9-d9a2-4174-8879-50dc1a53fb2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Room">
+      <UniqueIdentifier>{e5779d38-a20a-4760-88ab-06850b95b6f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Service">
+      <UniqueIdentifier>{b742f253-18ed-4c34-bf11-947cb3a3204a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Inc\targetver.h">
+      <Filter>PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\stdafx.h">
+      <Filter>PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\ChatServerConfig.h">
+      <Filter>Server\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Modules.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\GameServerSession.h">
+      <Filter>Server\Sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\GameServerSessionManager.h">
+      <Filter>Server\Sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\ChildChatServerSession.h">
+      <Filter>Server\Sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\RootChatServerSession.h">
+      <Filter>Server\Sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\ChildChatServerSessionManager.h">
+      <Filter>Server\Sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\ChatServerIOCPProcessor.h">
+      <Filter>Server\Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\BroadcastingServerSession.h">
+      <Filter>Server\Sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\CommunityServerSession.h">
+      <Filter>Server\Sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\BroadcastingServerSessionManager.h">
+      <Filter>Server\Sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\ChatSession.h">
+      <Filter>System\Session</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\ChatSessionManager.h">
+      <Filter>System\Session</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Room.h">
+      <Filter>System\Room</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\RoomManager.h">
+      <Filter>System\Room</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\ChatService.h">
+      <Filter>System\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\RoomService.h">
+      <Filter>System\Service</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\ChatServerMain.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ChatServerConfig.cpp">
+      <Filter>Server\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\stdafx.cpp">
+      <Filter>PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Modules.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\GameServerSession.cpp">
+      <Filter>Server\Sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\GameServerSessionManager.cpp">
+      <Filter>Server\Sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ChildChatServerSession.cpp">
+      <Filter>Server\Sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ChildChatServerSessionManager.cpp">
+      <Filter>Server\Sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\RootChatServerSession.cpp">
+      <Filter>Server\Sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ChatServerIOCPProcessor.cpp">
+      <Filter>Server\Processors</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\BroadcastingServerSession.cpp">
+      <Filter>Server\Sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\CommunityServerSession.cpp">
+      <Filter>Server\Sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\BroadcastingServerSessionManager.cpp">
+      <Filter>Server\Sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ChatSession.cpp">
+      <Filter>System\Session</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ChatSessionManager.cpp">
+      <Filter>System\Session</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Room.cpp">
+      <Filter>System\Room</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\RoomManager.cpp">
+      <Filter>System\Room</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ChatService.cpp">
+      <Filter>System\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\RoomService.cpp">
+      <Filter>System\Service</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Inc\BroadcastingServerBypassSession.generated.inl">
+      <Filter>헤더 파일</Filter>
+    </None>
+    <None Include="Inc\BroadCastingServerSession.clientgame.generated.inl">
+      <Filter>헤더 파일</Filter>
+    </None>
+    <None Include="Inc\BroadcastingServerSession.generated.inl">
+      <Filter>헤더 파일</Filter>
+    </None>
+    <None Include="Inc\BroadCastingServerSessionBody.clientgame.generated.inl">
+      <Filter>헤더 파일</Filter>
+    </None>
+    <None Include="Inc\BroadcastingServerSessionBody.generated.inl">
+      <Filter>헤더 파일</Filter>
+    </None>
+    <None Include="Inc\ChildChatServerSession.generated.inl">
+      <Filter>헤더 파일</Filter>
+    </None>
+    <None Include="Inc\ChildChatServerSessionBody.generated.inl">
+      <Filter>헤더 파일</Filter>
+    </None>
+    <None Include="Inc\CommunityServerSession.generated.inl">
+      <Filter>헤더 파일</Filter>
+    </None>
+    <None Include="Inc\CommunityServerSessionBody.generated.inl">
+      <Filter>헤더 파일</Filter>
+    </None>
+    <None Include="Inc\GameServerSession.generated.inl">
+      <Filter>헤더 파일</Filter>
+    </None>
+    <None Include="Inc\GameServerSessionBody.generated.inl">
+      <Filter>헤더 파일</Filter>
+    </None>
+    <None Include="Inc\RootChatServerSession.generated.inl">
+      <Filter>헤더 파일</Filter>
+    </None>
+    <None Include="Inc\RootChatServerSessionBody.generated.inl">
+      <Filter>헤더 파일</Filter>
+    </None>
+    <None Include="README.md">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+</Project>
