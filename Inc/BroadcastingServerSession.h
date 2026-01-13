@@ -37,7 +37,7 @@ public:
 
 	void OnRecvMessage(StreamReader& reader) override;
 	bool Send(SendBufferStreamWriter& writer) const override;
-	void Recv_PT_BM_REQ_SERVER_IDENTITY(const INT& serverId);
+	void Recv_PT_BM_REQ_SERVER_IDENTITY(const INT& serverId) override;
 };
 
 class BroadcastingServerSessionFactory : public SessionFactory, public Singleton<BroadcastingServerSessionFactory>

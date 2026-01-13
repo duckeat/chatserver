@@ -22,10 +22,10 @@ public:
 
 	const SessionId& GetSessionId() const { return m_SessionId; }
 
-	void Recv_PT_CR_REQ_SEND_CHAT(const UINT64& roomID, const BYTE& chatType, const ChatMessage& message);
-	void Recv_PT_CR_REQ_GLOBAL_MESSAGE(const BYTE& chatType, const BYTE& messageType, const BYTE& messageID, const TArray<struct FMessageAdditionalInfo>& arguments);
-	void Recv_PT_CR_REQ_CREATE_CHATROOM(const UINT64& roomID, const BYTE& chatType);
-	void Recv_PT_CR_REQ_DESTROY_CHATROOM(const UINT64& roomID, const BYTE& chatType);
+	void Recv_PT_CR_REQ_SEND_CHAT(const UINT64& roomID, const BYTE& chatType, const ChatMessage& message) override;
+	void Recv_PT_CR_REQ_GLOBAL_MESSAGE(const BYTE& chatType, const BYTE& messageType, const BYTE& messageID, const TArray<struct FMessageAdditionalInfo>& arguments) override;
+	void Recv_PT_CR_REQ_CREATE_CHATROOM(const UINT64& roomID, const BYTE& chatType) override;
+	void Recv_PT_CR_REQ_DESTROY_CHATROOM(const UINT64& roomID, const BYTE& chatType) override;
 private:
 	SessionId m_SessionId;	
 };

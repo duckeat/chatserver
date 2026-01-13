@@ -23,9 +23,9 @@ public:
 	bool Send(SendBufferStreamWriter& writer) const override;
 	bool IsConnected() { return m_bConnect; }
 
-	void Recv_PT_RC_NFY_SEND_CHAT(const UINT64& roomID, const BYTE& chatType, const ChatMessage& message);
-	void Recv_PT_RC_ANS_CREATE_CHATROOM(const UINT& result, const UINT64& roomID, const BYTE& chatType);
-	void Recv_PT_RC_ANS_REGISTER_CHILDCHAT_RESULT(const UINT& result);
+	void Recv_PT_RC_NFY_SEND_CHAT(const UINT64& roomID, const BYTE& chatType, const ChatMessage& message) override;
+	void Recv_PT_RC_ANS_CREATE_CHATROOM(const UINT& result, const UINT64& roomID, const BYTE& chatType) override;
+	void Recv_PT_RC_ANS_REGISTER_CHILDCHAT_RESULT(const UINT& result) override;
 private:
 	void RetryConnect();
 private:

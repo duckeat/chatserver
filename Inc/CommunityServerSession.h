@@ -25,10 +25,10 @@ public:
 	void OnRecvMessage(StreamReader& reader) override;
 	bool Send(SendBufferStreamWriter& writer) const override;
 
-	void Recv_PT_TM_ANS_REGIST_SERVER(const UINT& result);
-	void Recv_PT_TM_REQ_ENTER_USER(const SessionId& session_id);
-	void Recv_PT_TM_REQ_LEAVE_USER(const SessionId& session_id);
-	void Recv_PT_TM_REQ_EXCHANGE_USER(const SessionId& old_session_id, const SessionId& new_session_id);
+	void Recv_PT_TM_ANS_REGIST_SERVER(const UINT& result) override;
+	void Recv_PT_TM_REQ_ENTER_USER(const SessionId& session_id) override;
+	void Recv_PT_TM_REQ_LEAVE_USER(const SessionId& session_id) override;
+	void Recv_PT_TM_REQ_EXCHANGE_USER(const SessionId& old_session_id, const SessionId& new_session_id) override;
 private:
 	void RetryConnect();
 private:
